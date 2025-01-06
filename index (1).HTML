@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1b1cb;
+      color: #333;
+      text-align: center;
+    }
+
+    .header {
+      padding: 20px;
+      background-color: #f36fad;
+      color: white;
+      animation: bounce 2s infinite;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-5px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .image-container {
+      border: 2px solid #f57ab4;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ff99c8;
+      color: rgb(255, 255, 255);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .image-container {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-container {
+        width: 100px;
+        height: 100px;
+      }
+
+      .header h1 {
+        font-size: 1.8rem;
+      }
+
+      .header p {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 20rem;
+      }
+        }
+  </style>
+  
+</head>
+<body>
+  <div class="header">
+    <h1>Happy Valentine's Day! 💖</h1>
+    <p>រីករាយទិវានៃសេចក្តីស្រលាញ់អ្នកគ្រូពេទ្យស្អាត<br>
+        សូមអោយអ្នកគ្រូពេទ្យទទួលបានសំណាងល្អ សុខភាពល្អ<br>
+        ហើយខ្ញុំក៏សូមអរគុណដល់អ្នកគ្រូផងដែរដែលធ្វើឲខ្ញុំទទួលបាននៅអារម្មណ៍មួយប្រៀបបាននិងការស្រលាញ់<br>
+        ខ្ញុំស្មានតែខ្ញុំមួយជីវិតនេះគឺគ្មានសំណាងបានទទួលនៅអារម្មណ៍មួយដែលពពេញដោយ កំលាំងចិត្ត បែបនេះពីមុនមកទេ<br>
+        ខ្ញុំគិតថាខ្ញុំមានសំណាងណាស់ដែលខ្ញុំបានស្គាល់អ្នកគ្រូពេទ្យដែលបានផ្តល់នៅអារម្មណ៍ ល្អៗ កំលាំងចិត្ត​ ក្តីសង្ឃឹមមកអោយ(ទោះបីពេលខ្លះខ្ញុំគិតតែម្នាក់ឯងក៏ដោយ) <br>
+        ខ្ញុំសង្ឃឹមថាក្នុងមួយជីវិតនេះអាចមានឪកាសបានមើលថែអ្នកគ្រូផងចុះ🙏🙏🙏🙏។<br>
+
+      </p>
+  </div>
+
+  <div class="gallery">
+    <div class="image-container">
+      <img src="panha.jpg" alt="Valentine's Day Image">
+    </div>
+    <div class="image-container">
+      <img src="panha1.png" alt="Valentine's Day Image">
+    </div>
+    <div class="image-container">
+      <img src="panha2.jpg" alt="Valentine's Day Image">
+    </div>
+    <div class="image-container">
+      <img src="panha3.jpg" alt="Valentine's Day Image">
+    </div>
+    <div class="image-container">
+      <img src="panha4.jpg" alt="Valentine's Day Image">
+    </div>
+  </div>
+
+  <footer>
+    <p>​រីករាយទិវានៃសេចក្តីស្រលាញ់</p>
+  </footer>
+
+  <script>
+    console.log("Happy Valentine's Day! Enjoy your gallery.");
+  </script>
+</body>
+</html>
